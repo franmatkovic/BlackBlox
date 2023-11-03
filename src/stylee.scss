@@ -1,0 +1,137 @@
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+.formContainerr {
+  background-image: url(../src/img/background.png);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  .formWrapperr {
+    background-color: white;
+    padding: 25px 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    .peter {
+      height: 50px;
+      margin-right: 350px;
+      img {
+        height: 50px;
+      }
+    }
+
+    .kontoUebersicht {
+      background-color: white;
+      padding: 15px 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      width: 150px;
+
+      img {
+        height: 50px;
+      }
+      .kontoDisplayName,
+      .kontoDisplayEmail {
+        padding: 15px;
+        border: 1px solid black;
+        width: 280px;
+        border: none;
+        border-bottom: 1px solid black;
+        font-family: cursive;
+        strong {
+          font-family: cursive;
+        }
+      }
+      .updateName {
+        img {
+        }
+      }
+      .username {
+        color: #777;
+        font-size: 17px;
+        font-style: italic;
+        font-family: cursive;
+        img {
+          margin-top: 5px;
+        }
+      }
+
+      .email {
+        font-size: 17px;
+        color: #777;
+        font-style: italic;
+        text-decoration: underline;
+      }
+    }
+
+    .logoUser {
+      h1 {
+        font-family: cursive;
+      }
+      img {
+        background-color: #181818;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+    }
+
+    .logoutBtn {
+      button {
+        width: 280px;
+        border-radius: 5px;
+        background-color: gray;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: -200;
+        margin-top: 30px;
+      }
+    }
+    .updateName {
+      position: relative;
+      img {
+        position: relative;
+        height: 50px;
+        left: 270px;
+        bottom: 210px;
+      }
+    }
+    .updateMail {
+      position: relative;
+      img {
+        position: relative;
+        height: 50px;
+        left: 220px;
+        bottom: 145px;
+      }
+    }
+  }
+}
