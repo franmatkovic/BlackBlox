@@ -3,15 +3,14 @@ import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyAQ2J2Os8W5XmDwlf7CL2mhNQJuSkhQLV0",
-  authDomain: "blackbox-7098d.firebaseapp.com",
-  projectId: "blackbox-7098d",
-  storageBucket: "blackbox-7098d.appspot.com",
-  messagingSenderId: "620583095924",
-  appId: "1:620583095924:web:7487fb114d1c3f7de60b21",
-  measurementId: "G-1L75WHMV0N",
+  apiKey: "AIzaSyB6SB-OQyTiZToDR__aGM_r1Bb-q7CznuE",
+  authDomain: "blackblox-9865e.firebaseapp.com",
+  projectId: "blackblox-9865e",
+  storageBucket: "blackblox-9865e.appspot.com",
+  messagingSenderId: "4264201959",
+  appId: "1:4264201959:web:2f4f5d3d33b17f875d1c42",
+  measurementId: "G-HJWB2CE04L",
 };
-
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth();
 export const storage = getStorage();
